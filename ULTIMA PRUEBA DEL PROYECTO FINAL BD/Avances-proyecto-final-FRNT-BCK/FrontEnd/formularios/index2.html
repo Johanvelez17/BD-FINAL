@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech4Good | Formulario Ingreso</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="text-center">Ingresa tus Datos</h2>
+        <form method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombreUsuario">Nombre</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="numeroDocumento">Número de Documento</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="numeroDocumento" name="numeroDocumento" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="correoElectronicoUsuario">Correo Electrónico</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        </div>
+                        <input type="email" class="form-control" id="correoElectronicoUsuario" name="correoElectronicoUsuario" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="telefonoUsuario">Teléfono</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <input type="tel" class="form-control" id="telefonoUsuario" name="telefonoUsuario" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="tipoDeUsuario">Tipo De Usuario</label>
+                    <select class="form-control" id="tipoDeUsuario" name="tipoDeUsuario">
+                        <option selected>Selecciona...</option>
+                        <option value="Donante">Donante</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="tipo-documento">Productos a Donar</label>
+                    <select class="form-control" id="tipo-documento" name="tipo-documento">
+                        <option selected>Selecciona...</option>
+                        <option value="Tablets">Tablets</option>
+                        <option value="Computadores">Computadores de escritorio y portátiles</option>
+                        <option value="Ipads">Ipads</option>
+                        <option value="Televisores">Televisores</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pais">Accesorios a Donar</label>
+                    <select class="form-control" id="pis" name="pis">
+                        <option selected>Selecciona...</option>
+                        <option value="peru">Ratones y teclados</option>
+                        <option value="colombia">Monitores</option>
+                        <option value="mexico">Impresoras y cartuchos de tinta</option>
+                        <option value="carnet-extranjeria">Auriculares y micrófonos</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pais">Ubicación del producto</label>
+                    <select class="form-control" id="pais" name="pais">
+                        <option selected>Selecciona...</option>
+                        <option value="peru">Universidad privada</option>
+                        <option value="colombia">Universidad pública</option>
+                        <option value="mexico">Institución educativa privada</option>
+                        <option value="mexico">Institución educativa pública</option>
+                        <option value="mexico">Fundaciones</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pais">Estado del producto</label>
+                    <select class="form-control" id="pai" name="pai">
+                        <option selected>Selecciona...</option>
+                        <option value="peru">Nuevo</option>
+                        <option value="colombia">Como nuevo</option>
+                        <option value="mexico">Usado</option>
+                        <option value="mexico">Reparables</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="botonRegistrar" name="botonRegistrar">Enviar</button>
+        </form>
+    </div>
+
+    <nav>
+        <a href="./index.html">Inicio de sesion</a>
+        <a href="./Tabla/tabla.html">Ir a la tabla</a>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Formulario.js"></script>
+</body>
+</html>
